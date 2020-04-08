@@ -129,21 +129,27 @@ padding-left:5px;
     padding-top:50px;
      padding-bottom: 50px;
      padding-left:5px;
+    
+
 
 }
 .footer div{
      display:flex;
      flex-direction:column;
+     justify-content: space-between;
      align-items:center;
 }
+
+
 .footer p{
+    height:3rem;
     font-size:30px;
     font-style: italic;
 }
 .footer button{
 
     width: 200px;
-    height: 60px;
+    height: 3rem;
     background-color: gray; 
     color: black;
     font-size: 35px;
@@ -151,11 +157,11 @@ padding-left:5px;
 
 .footer button:hover{
     background-color: lightyellow;
-    
-  
   }
   
+  
 .footer i{
+    height:3rem;
     font-size: 30px;
 }
 
