@@ -28,17 +28,19 @@ body{
     margin:5px white;
 }
 
-#header{
-    background-color:lightpink;
-     padding-bottom: 20px;
-     padding-left:5px;
+header{
+     background-color:lightpink;
+     min-height: 15vh;
+     border-bottom: 5px solid salmon;
 }
 
 h1{
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family: cursive;
+    color: lightgoldenrodyellow;
     padding-top:3%;
     padding-left:2%;
-    font-size:50px;
+    font-size:70px;
     padding-bottom: 20px;
 }
 
@@ -50,13 +52,11 @@ h1{
 }
 
 button{
-    width: 80px;
-    height: 30px;
-    background-color: gray; 
-    color: black;
-    font-size: 20px;
+    background-color: white; 
+    border:2px solid salmon;
+    font-size: 25px;
+    border-radius: 30%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 .links button:hover{
@@ -66,8 +66,13 @@ button{
 /*introduction part*/
 
 #mypicture img{
+    
     width:60%;
     height:auto;
+    margin: 10%;
+    padding-left:10%;
+    border-radius: 10px;
+    
 }
 
 .intro{
@@ -89,8 +94,7 @@ padding-left:5px;
 
     width: 200px;
     height: 60px;
-    background-color: gray; 
-    color: black;
+    background-color:white; 
     font-size: 35px;
     padding:10px;
 
@@ -103,15 +107,23 @@ padding-left:5px;
 .others div{
     width:24%;
     padding-left:5px;
-    padding-bottom:10px;
+    padding-bottom:50px;
     display:flex;
     flex-direction: column;
     align-items: center;
+    font-family: fantasy;
+    font-size:20px;
+    color:yellowgreen;
+    
+    
+
 }
+
 .others img{
  
     width:80%;
     height:auto;
+    border-radius: 10%;
 }
 .others{
    
@@ -124,7 +136,8 @@ padding-left:5px;
 
 /*footer*/
 .footer{
-    
+
+    border-top: 5px solid salmon;
     background-color:lightpink;
     padding-top:50px;
      padding-bottom: 50px;
@@ -143,26 +156,28 @@ padding-left:5px;
 
 .footer p{
     height:3rem;
-    font-size:30px;
+    font-size:50px;
     font-style: italic;
+    padding-bottom: 40px;
 }
 .footer button{
-
     width: 200px;
     height: 3rem;
-    background-color: gray; 
-    color: black;
+    background-color:white;
     font-size: 35px;
 }
 
+#footerB{
+    padding-bottom:15px;
+}
 .footer button:hover{
     background-color: lightyellow;
   }
   
-  
 .footer i{
-    height:3rem;
+    height:2rem;
     font-size: 30px;
+    border: 2px solid rgb(26, 26, 148);
 }
 
 
