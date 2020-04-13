@@ -43,7 +43,7 @@ header{
      min-height: 15vh;
      border-bottom: 5px solid salmon;
      margin-left: 1%;
-     margin-right: 1%
+     margin-right: 1%;
 }
 
 h1{
@@ -54,6 +54,7 @@ h1{
     padding-left:2%;
     font-size:7rem;
     padding-bottom: 2%;
+    font-family: 'Lobster', cursive;
 }
 
 .links{
@@ -72,6 +73,7 @@ h1{
     text-align: center;
     border-radius: 30%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
 }
 
 .links a:hover{
@@ -82,7 +84,7 @@ h1{
 
 #mypicture img{
     
-    width:60%;
+    width:80%;
     height:auto;
     margin: 10%;
     padding-left:5%;
@@ -97,21 +99,25 @@ align-items:center;
 background-color: lightyellow;
 padding-bottom:5%;
 margin-left: 1%;
-margin-right: 1%
+margin-right: 1%;
 
 }
 
-h2{
+.intro h2{
     text-transform: capitalize;
     font-family: cursive;
     font-size:5rem;
+    text-align: center;
+    padding-bottom:2%;
 }
-#introTxt{
+.intro p{
+    padding-top:4%;
      font-size:4rem;
-     padding-right:20%;
      
-}
-#introP{
+    }
+     
+
+.intro button{
     width:20%;
     height:5vh;
     background-color:white;  
@@ -119,12 +125,25 @@ h2{
     font-size: 2.5rem;
     text-align: center;
     border-radius: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', se
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-#introP:hover{
+
+.intro button a{
+    text-decoration: none;
+}
+
+.intro button:hover{
     background-color: lightpink;
   }
+
+  #introTxt{
+      width:70%;
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+  }
+
   
 /*other content*/
 .others div{
@@ -152,180 +171,197 @@ h2{
     flex-wrap:wrap;
     background-color:lightyellow;
     margin-left: 1%;
-     margin-right: 1%
+    margin-right: 1%
     
 }
 
+
 /*footer*/
-.footer{
+   
+footer{
 
     border-top: 5px solid salmon;
     background-color:lightpink;
-     padding-top:5%;
-     padding-bottom: 5%;
-     margin-left: 1%;
-     margin-right: 1%
-    
-}
-.footer div{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items:center;
+    padding-top:3%;
+    padding-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;  
+    text-align: center;
 }
 
-.footer p{
+
+
+footer h2{
     font-size: 5rem;
     font-style: italic;
-    padding-bottom:2%;
+    
 }
 
-#footerC{
-    width: 15%;
-    height:5vh;
+footer button{
+    width:10% ;
     background-color: white; 
     border:2px solid salmon;
     font-size: 3rem;
     text-align: center;
     border-radius: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-block-end:2rem;
+}
 
+footer button a{
+    
+        text-decoration: none
+}
 
-#footerC:hover{
+footer button:hover{
     background-color: lightyellow;
   }
   
-.footer i{
-    display:inline-block;
-    background-color:dodgerblue;
-    font-size: 3rem;
-}
-.socialMedia{
+.icons i{
+    width:5%;
     color:white;
-}
+    background-color: lightskyblue;
+    border: 2px solid lightskyblue;
+    border-radius: 10%;
 
+}
 
 /*2 days media*/
 
 /*800*/
 @media(max-width:800px){
+
     h1{
         font-size:6rem;
     }
+
+   .links a{
+        width:15%
+    }
    
-    .links a{
-        width: 20%;
-        height:4vh;
-        font-size: 2rem;
-
-    }
-.intro div{
-    width:50%;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-    #introTxt{
-        font-size:2rem;
+    #mypicture img{
+    
         width:60%;
-        padding-left:30%;
+        
     }
- 
-    #introP{
+    
+    
+    .intro h2{
+        font-size:4rem;
+        padding-bottom:5%
+    }
+    .intro p{
+        padding-top:8%;
+        font-size:3rem;
+         
+        }
+         
+    
+    .intro button{
         width: 50%;
-        height:5vh;
-        font-size: 2rem;
     }
+    
+    
+      #introTxt{
+          padding-right:5%;
+      }
 
-     .footer p{
-         font-size:4rem;
-     }
-}
-
-/*500px*/
-@media(max-width:500px){
-h1{
-    font-size:4rem;
-}
-.links div{
-    font-size:2rem;
-    color:lightblue;
-}
-
-.intro{
-
-    flex-direction:column;
-    align-items:center;
-    justify-content: space-between;
-}
-
- #mypicture{
-     width:80%;
- }
-
- #introTxt{
-    font-size:2rem;
-    width: 160%;
-    padding-left:20%;
-
+      
+footer h2{
+    font-size: 4rem;
+    font-style: italic;
     
 }
 
-#introP{
-    width:50%;
-    height:4VH;
-    background-color:white; 
-    font-size: 2rem;
-    padding-left:2%;
+footer button{
+    width:20% ;
 }
 
+.icons i{
+    width:6%;
 
-h2{
-    padding-left:10%;
+}
+    }
+
+
+/*500px*/
+@media(max-width:500px){
+
+h1{
+    font-size:4rem;
+}
+
+.links a{
+
+    width: 18%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.intro{
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#mypicture img{
+    width:60%;
+    height:40vh
+}
+
+#introTxt{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-right:15%;
+}
+
+.intro h2{
+
     font-family: cursive;
     font-size:3rem;
 }
 
+.intro p{
+    padding-left:20%;
+     font-size:2rem;
+     
+    }
+     
+
+.intro button{
+    width:40%;
+    height:7vh;
+    font-size: 2.5rem;
+
+}
+
+
+
 .others img{
- 
-    width:100%;
+     width:100%;
     height:auto;
     border-radius: 10%;
 }
 
+footer h2{
+    font-size:3rem;
+}
 
-.footer p{
+footer button{
+    width:40% ;
     font-size: 2.5rem;
-    font-style: italic;
 }
+  
 
-#footerC{
- width:30%;
- font-size:2.5rem;
- text-align: center;
-
-}
-
-.footer i{
-    height: 3vh;
-    font-size: 2rem;
-    border: 2px solid rgb(26, 26, 148);
-}
+.icons i{
+    width:10%;
+    color:white;
+    border-radius: 10%;
 
 }
 
-/*360 px x 640 px*/
-@media(max-width:360px){
-    #introP{
-        width: 30%;
-        height:3vh;
-        font-size: 1rem;
-    }
 
-    h2{
-        font-size:3rem;
-    }
 }
+
