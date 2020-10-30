@@ -1,1 +1,367 @@
 /* Add CSS styling here */
+
+/*reset */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption,footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+/*border: 0;*/  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+.hidden{
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+html{
+    font-size: 62.5%
+}
+
+header{
+     background-color:lightpink;
+     min-height: 15vh;
+     border-bottom: 5px solid salmon;
+     margin-left: 1%;
+     margin-right: 1%;
+}
+
+h1{
+    text-transform: capitalize;
+    font-family: cursive;
+    color: lightgoldenrodyellow;
+    padding-top:3%;
+    padding-left:2%;
+    font-size:7rem;
+    padding-bottom: 2%;
+    font-family: 'Lobster', cursive;
+}
+
+.links{
+    display:flex;
+    flex-wrap:wrap;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+.links a{
+    width: 10%;
+    height:5vh;
+    background-color: white; 
+    border:2px solid salmon;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+.links a:hover{
+  background-color:lightyellow;
+}
+
+/*introduction part*/
+
+#mypicture img{
+    
+    width:80%;
+    height:auto;
+    margin: 10%;
+    padding-left:5%;
+    border-radius: 10%
+    
+}
+
+.intro{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color: lightyellow;
+padding-bottom:5%;
+margin-left: 1%;
+margin-right: 1%;
+
+}
+
+.intro h2{
+    text-transform: capitalize;
+    font-family: cursive;
+    font-size:5rem;
+    text-align: center;
+    padding-bottom:2%;
+}
+.intro p{
+    padding-top:4%;
+     font-size:4rem;
+     
+    }
+     
+
+.intro button{
+    width:20%;
+    height:5vh;
+    background-color:white;  
+    border:2px solid salmon;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.intro button a{
+    text-decoration: none;
+}
+
+.intro button:hover{
+    background-color: lightpink;
+  }
+
+  #introTxt{
+      width:70%;
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+  }
+
+  
+/*other content*/
+.others div{
+    width:24%;
+    padding-bottom:5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: fantasy;
+    font-size:2rem;
+    color:yellowgreen;
+
+}
+
+.others img{
+ 
+    width:80%;
+    height:auto;
+    border-radius: 10%;
+}
+.others{
+   
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color:lightyellow;
+    margin-left: 1%;
+    margin-right: 1%
+    
+}
+
+
+/*footer*/
+   
+footer{
+
+    border-top: 5px solid salmon;
+    background-color:lightpink;
+    padding-top:3%;
+    padding-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;  
+    text-align: center;
+}
+
+
+
+footer h2{
+    font-size: 5rem;
+    font-style: italic;
+    
+}
+
+footer button{
+    width:10% ;
+    background-color: white; 
+    border:2px solid salmon;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-block-end:2rem;
+}
+
+footer button a{
+    
+        text-decoration: none
+}
+
+footer button:hover{
+    background-color: lightyellow;
+  }
+  
+.icons i{
+    width:5%;
+    color:white;
+    background-color: lightskyblue;
+    border: 2px solid lightskyblue;
+    border-radius: 10%;
+
+}
+
+/*2 days media*/
+
+/*800*/
+@media(max-width:800px){
+
+    h1{
+        font-size:6rem;
+    }
+
+   .links a{
+        width:15%
+    }
+   
+    #mypicture img{
+    
+        width:60%;
+        
+    }
+    
+    
+    .intro h2{
+        font-size:4rem;
+        padding-bottom:5%
+    }
+    .intro p{
+        padding-top:8%;
+        font-size:3rem;
+         
+        }
+         
+    
+    .intro button{
+        width: 50%;
+    }
+    
+    
+      #introTxt{
+          padding-right:5%;
+      }
+
+      
+footer h2{
+    font-size: 4rem;
+    font-style: italic;
+    
+}
+
+footer button{
+    width:20% ;
+}
+
+.icons i{
+    width:6%;
+
+}
+    }
+
+
+/*500px*/
+@media(max-width:500px){
+
+h1{
+    font-size:4rem;
+}
+
+.links a{
+
+    width: 18%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.intro{
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#mypicture img{
+    width:60%;
+    height:40vh
+}
+
+#introTxt{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-right:15%;
+}
+
+.intro h2{
+
+    font-family: cursive;
+    font-size:3rem;
+}
+
+.intro p{
+    padding-left:20%;
+     font-size:2rem;
+     
+    }
+     
+
+.intro button{
+    width:40%;
+    height:7vh;
+    font-size: 2.5rem;
+
+}
+
+
+
+.others img{
+     width:100%;
+    height:auto;
+    border-radius: 10%;
+}
+
+footer h2{
+    font-size:3rem;
+}
+
+footer button{
+    width:40% ;
+    font-size: 2.5rem;
+}
+  
+
+.icons i{
+    width:10%;
+    color:white;
+    border-radius: 10%;
+
+}
+
+
+}
+
