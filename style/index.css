@@ -1,1 +1,183 @@
 /* Add CSS styling here */
+
+/*reset */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+/*border: 0;*/  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+
+
+body{
+    margin:5px white;
+}
+
+header{
+     background-color:lightpink;
+     min-height: 15vh;
+     border-bottom: 5px solid salmon;
+}
+
+h1{
+    text-transform: capitalize;
+    font-family: cursive;
+    color: lightgoldenrodyellow;
+    padding-top:3%;
+    padding-left:2%;
+    font-size:70px;
+    padding-bottom: 20px;
+}
+
+.links{
+    display:flex;
+    flex-wrap:wrap;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+button{
+    background-color: white; 
+    border:2px solid salmon;
+    font-size: 25px;
+    border-radius: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.links button:hover{
+  background-color:lightyellow;
+}
+
+/*introduction part*/
+
+#mypicture img{
+    
+    width:60%;
+    height:auto;
+    margin: 10%;
+    padding-left:10%;
+    border-radius: 10px;
+    
+}
+
+.intro{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color: lightyellow;
+padding-bottom:20px;
+padding-left:5px;
+
+
+}
+#introTxt{
+     font-size:40px;
+     width:50%;
+     
+}
+.intro button{
+
+    width: 200px;
+    height: 60px;
+    background-color:white; 
+    font-size: 35px;
+    padding:10px;
+
+}
+.intro button:hover{
+    background-color: lightpink;
+  }
+  
+/*other content*/
+.others div{
+    width:24%;
+    padding-left:5px;
+    padding-bottom:50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: fantasy;
+    font-size:20px;
+    color:yellowgreen;
+    
+    
+
+}
+
+.others img{
+ 
+    width:80%;
+    height:auto;
+    border-radius: 10%;
+}
+.others{
+   
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color:lightyellow;
+    
+}
+
+/*footer*/
+.footer{
+
+    border-top: 5px solid salmon;
+    background-color:lightpink;
+    padding-top:50px;
+     padding-bottom: 50px;
+     padding-left:5px;
+    
+
+
+}
+.footer div{
+     display:flex;
+     flex-direction:column;
+     justify-content: space-between;
+     align-items:center;
+}
+
+
+.footer p{
+    height:3rem;
+    font-size:50px;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+.footer button{
+    width: 200px;
+    height: 3rem;
+    background-color:white;
+    font-size: 35px;
+}
+
+#footerB{
+    padding-bottom:15px;
+}
+.footer button:hover{
+    background-color: lightyellow;
+  }
+  
+.footer i{
+    height:2rem;
+    font-size: 30px;
+    border: 2px solid rgb(26, 26, 148);
+}
+
+
